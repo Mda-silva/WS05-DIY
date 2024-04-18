@@ -1,0 +1,9 @@
+
+During the workshop focused on overloaded operators and helper functions, I encountered numerous challenges, particularly with the implementation of side-effect operators like += and -=. My foremost struggle arose with the += operator, leading to excessive memory leaks due to improper memory management. Additionally, segmentation fault errors occurred when attempting to access non-existent memory, often stemming from misplaced memory deallocation. To rectify these issues with the += operator, I devised a solution involving the creation of a temporary array for power storage. I transferred the contents of the old m_power array to this temporary array, added the new power, deallocated the old m_power array, and then reassigned the temporary array. Subsequently, I encountered difficulties with the >> operator function, initially failing due to limitations within the class definition. Resolving this, I redefined it as a helper function external to the class, overcoming constraints related to parameter count and type. Through these troubleshooting processes, I gained invaluable insights into effective memory management and operator overloading techniques.
+
+
+
+
+
+
+
